@@ -1,13 +1,26 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Anienamakan Udo | Front-End Developer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Anienamakan Udo — Frontend Developer</title>
+
     <meta
       name="description"
-      content="Front-End Developer building responsive, user-focused web interfaces with HTML, CSS, JavaScript, and React."
+      content="Anienamakan Udo is a Frontend Developer building responsive web applications, dashboards, and digital experiences with React, Next.js, TypeScript, and JavaScript."
     />
+    <meta name="author" content="Anienamakan Udo" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Anienamakan Udo — Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Building scalable web applications, multi-role dashboards, and responsive interfaces with React, Next.js, and TypeScript."
+    />
+    <meta property="og:image" content="./assets/images/profile-picture.jpg" />
+
     <link
       rel="icon"
       href="./assets/logo/Navy AU Monogram Icon.png"
@@ -21,22 +34,22 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-7MX6C7MR2V"
     ></script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-7MX6C7MR2V");
     </script>
   </head>
 
   <body>
-    <!-- Header / Nav -->
+    <!-- Header -->
     <header class="site-header">
-      <nav class="nav container" aria-label="Primary">
-        <a class="brand" href="https://anienam.vercel.app/">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Anienamakan Udo home">
           <span class="brand-mark" aria-hidden="true">AU</span>
           <span class="brand-text">Anienamakan Udo</span>
         </a>
@@ -52,14 +65,20 @@
         </button>
 
         <div class="nav-menu" id="nav-menu">
+          <a class="nav-link" href="#work">Work</a>
+          <a class="nav-link" href="#experience">Experience</a>
           <a class="nav-link" href="#about">About</a>
           <a class="nav-link" href="#skills">Skills</a>
-          <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#experience">Experience</a>
-          <a class="nav-link" href="#certs">Certifications</a>
           <a class="nav-link" href="#contact">Contact</a>
 
-          <a class="nav-cta" href="#projects">View Projects</a>
+          <a
+            class="nav-cta"
+            href="https://github.com/anienam"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub ↗
+          </a>
         </div>
       </nav>
     </header>
@@ -68,702 +87,548 @@
       <!-- Hero -->
       <section class="hero container">
         <div class="hero-content">
-          <p class="eyebrow">Front-End Developer • HTML • CSS • JavaScript</p>
-
-          <div class="hero-image">
-            <img
-              src="./assets/images/profile-picture.jpg"
-              alt="Anienamakan Udo profile photo"
-            />
-          </div>
+          <p class="eyebrow">Frontend Developer</p>
 
           <h1 class="hero-title">
-            I turn Figma designs into responsive, accessible web applications.
+            I build web applications and responsive digital experiences.
           </h1>
-          <p class="hero-subtitle">
-            Frontend Developer experienced in building responsive dashboards,
-            business websites, and web applications with HTML, CSS, JavaScript,
-            React, and Next.js.
+
+          <p class="hero-intro">
+            I'm a Frontend Developer building responsive web applications,
+            dashboards, and digital experiences with
+            <strong>React, Next.js, TypeScript,</strong> and
+            <strong>JavaScript</strong>.
+          </p>
+
+          <p class="hero-current">
+            Currently Frontend Developer at
+            <strong>Unitellas International</strong>, maintaining and
+            engineering production cloud platform interfaces.
           </p>
 
           <div class="hero-actions">
-            <a class="btn primary" href="#projects">See my projects</a>
-            <a class="btn ghost" href="#contact">Contact me</a>
+            <a class="btn primary" href="#work">
+              View selected work
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <a class="text-link" href="#contact">
+              Get in touch
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
 
-          <div class="quick-links">
-            <a href="mailto:anieemma25@gmail.com">Email</a>
-            <span class="dot" aria-hidden="true">•</span>
-            <a
-              href="https://www.linkedin.com/in/anienam/"
-              target="_blank"
-              rel="noreferrer"
-              >LinkedIn</a
-            >
-            <span class="dot" aria-hidden="true">•</span>
-            <a
-              href="https://github.com/anienam"
-              target="_blank"
-              rel="noreferrer"
-              >GitHub</a
-            >
+          <div class="hero-meta">
+            <span>Lagos, Nigeria</span>
+            <span aria-hidden="true">·</span>
+            <a href="mailto:anieemma25@gmail.com">anieemma25@gmail.com</a>
           </div>
         </div>
 
-        <div class="hero-cards">
-          <aside class="hero-card" aria-label="Highlights">
-            <h2 class="card-title">Highlights</h2>
-            <ul class="bullets">
-              <li>
-                Current: Frontend Developer at
-                <strong>Unitellas International</strong>
-              </li>
-              <li>
-                Previous: Frontend Developer Intern at
-                <strong>Vephla Group</strong>
-              </li>
-              <li>
-                Projects:
-                <strong>TrashBeta, SkillLink & Flama CBT Platform</strong>
-              </li>
-            </ul>
-
-            <div class="stat-grid" role="list">
-              <div class="stat" role="listitem">
-                <div class="stat-num">2026</div>
-                <div class="stat-label">Joined Unitellas International</div>
-              </div>
-              <div class="stat" role="listitem">
-                <div class="stat-num">2</div>
-                <div class="stat-label">Frontend Development Roles</div>
-              </div>
-              <div class="stat" role="listitem">
-                <div class="stat-num">4+</div>
-                <div class="stat-label">Web Projects & Platforms Built</div>
-              </div>
-            </div>
-          </aside>
-
-          <aside class="hero-card" aria-label="Highlights">
-            <h2 class="card-title">What I Bring</h2>
-
-            <ul class="bullets">
-              <li>Responsive, user-focused interfaces</li>
-              <li>Figma designs translated into clean frontend code</li>
-              <li>Reusable layouts and consistent UI patterns</li>
-            </ul>
-
-            <div class="stat-grid" role="list">
-              <div class="stat" role="listitem">
-                <div class="stat-num">React</div>
-                <div class="stat-label">Component-based UI</div>
-              </div>
-
-              <div class="stat" role="listitem">
-                <div class="stat-num">UI/UX</div>
-                <div class="stat-label">Design-focused development</div>
-              </div>
-
-              <div class="stat" role="listitem">
-                <div class="stat-num">Mobile</div>
-                <div class="stat-label">Responsive-first approach</div>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <!-- About -->
-      <section id="about" class="section container">
-        <div class="section-head">
-          <h2>About</h2>
-        </div>
-
-        <div class="two-col">
-          <div class="panel">
-            <p>
-              I enjoy turning ideas and designs into interfaces that are clear,
-              intuitive, and easy to use. My approach combines attention to
-              detail with a strong focus on responsive layouts, accessibility,
-              and consistent user experiences across devices.
-            </p>
-            <p>
-              I’m constantly improving my frontend skills through real-world
-              projects, collaboration, and hands-on problem solving. I value
-              clean, maintainable code and enjoy breaking down complex UI
-              challenges into simple, reusable solutions.
-            </p>
+        <div class="hero-visual">
+          <div class="hero-image">
+            <img
+              src="./assets/images/profile-picture.jpg"
+              alt="Anienamakan Udo"
+            />
           </div>
 
-          <div class="panel">
-            <h3 class="panel-title">What you get when you work with me</h3>
-            <ul class="checklist">
-              <li>Strong layout + responsiveness mindset</li>
-              <li>Clean HTML/CSS structure (scalable, reusable)</li>
-              <li>Practical JavaScript for UI behavior</li>
-              <li>Product thinking from real multi-page flows</li>
-            </ul>
+          <div class="hero-caption">
+            <span>Currently</span>
+            <strong>Frontend Developer</strong>
+            <span>Unitellas International</span>
           </div>
         </div>
       </section>
 
-      <!-- Skills -->
-      <section id="skills" class="section container">
-        <div class="section-head">
-          <h2>Skills</h2>
-        </div>
+      <!-- Selected Work -->
+      <section id="work" class="section work-section">
+        <div class="container">
+          <div class="section-intro">
+            <p class="section-label">01 / Selected work</p>
 
-        <h3 class="panel-title">Core Frontend</h3>
+            <div>
+              <h2>Featured Applications & Platforms</h2>
 
-        <div class="chip-grid" role="list">
-          <span class="chip" role="listitem">HTML5</span>
-          <span class="chip" role="listitem">CSS3</span>
-          <span class="chip" role="listitem">JavaScript (ES6+)</span>
-        </div>
-
-        <h3 class="panel-title">Framework & Tools</h3>
-        <div class="chip-grid" role="list">
-          <span class="chip" role="listitem">React</span>
-          <span class="chip" role="listitem">Next.js</span>
-          <span class="chip" role="listitem">TypeScript</span>
-
-          <span class="chip" role="listitem">Git</span>
-          <span class="chip" role="listitem">GitHub</span>
-          <span class="chip" role="listitem">Figma</span>
-        </div>
-
-        <h3 class="panel-title">Other Skills</h3>
-        <div class="chip-grid" role="list">
-          <span class="chip" role="listitem">Responsive Design</span>
-          <span class="chip" role="listitem">API Integration</span>
-          <span class="chip" role="listitem">Component-Based Architecture</span>
-          <span class="chip" role="listitem">Accessibility</span>
-        </div>
-      </section>
-
-      <!--Capstone Projects -->
-      <section id="projects" class="section container">
-        <div class="section-head">
-          <h2>Capstone Projects</h2>
-        </div>
-
-        <div class="cards">
-          <!-- To-Do List -->
-          <article class="card">
-            <div class="project-image">
-              <img src="./assets/images/todo.png" alt="To-Do List" />
-            </div>
-            <div class="card-top">
-              <h3>To-Do List</h3>
-              <p class="muted">
-                A responsive task management application for organizing daily
-                activities, priorities, and completed tasks. Built with Vanilla
-                HTML, CSS, and JavaScript.
+              <p class="section-description">
+                Production websites, multi-role web dashboards, and web software
+                engineered for performance, maintainability, and clean user
+                experience.
               </p>
             </div>
+          </div>
 
-            <ul class="mini-bullets">
-              <li>Add, edit, delete, and complete tasks</li>
-              <li>Filter tasks by all, active, and completed status</li>
-              <li>Task priorities with localStorage persistence</li>
-            </ul>
+          <!-- Unitellas -->
+          <article class="project project-featured">
+            <div class="project-number">01</div>
 
-            <div class="card-actions">
+            <div class="project-content">
+              <p class="project-type">
+                Production Web App · Next.js · TypeScript
+              </p>
+
+              <h3>Unitellas International Platform</h3>
+
+              <p class="project-description">
+                Production website for an Africa-focused cloud infrastructure
+                provider. Designed and developed frontend features, integrated
+                APIs, translated designs into responsive interfaces, and handled
+                deployment, with a focus on performance, accessibility, and
+                overall user experience.
+              </p>
+
+              <ul class="project-details">
+                <li>Next.js App Router & TypeScript codebase architecture</li>
+                <li>Modular, reusable UI component library</li>
+                <li>Performance optimization & cross-browser compatibility</li>
+                <li>Accessible semantic layouts and responsive design</li>
+              </ul>
+
               <a
-                class="btn small"
-                href="https://todo-app-alpha-ruby-20.vercel.app/"
+                class="project-link"
+                href="https://www.unitellas.com.ng/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Live demo
-              </a>
-
-              <a
-                class="btn small ghost"
-                href="https://github.com/anienam/todo-app"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
+                Visit website
+                <span aria-hidden="true">↗</span>
               </a>
             </div>
-          </article>
 
-          <!-- Movie & Book Collection Manager -->
-          <article class="card">
             <div class="project-image">
               <img
-                src="./assets/images/movie-manager.png"
-                alt="Movie & Book Collection Manager"
+                src="./assets/images/unitellas.png"
+                alt="Unitellas International website interface"
+                loading="lazy"
               />
             </div>
-            <div class="card-top">
-              <h3>Movie &amp; Book Collection Manager</h3>
-              <p class="muted">
-                A personal collection manager for organizing movies and books
-                with ratings, notes, viewing or reading status, and searchable
-                content.
-              </p>
-            </div>
-            <ul class="mini-bullets">
-              <li>Add movies and books with ratings and notes</li>
-              <li>Search and filter the collection by title and rating</li>
-              <li>Manage watched, read, and watchlist statuses</li>
-            </ul>
-            <div class="card-actions">
-              <a
-                class="btn small"
-                href="https://movie-manager-beta.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-                >Live demo</a
-              >
-              <a
-                class="btn small ghost"
-                href="https://github.com/anienam/movie-manager"
-                target="_blank"
-                rel="noreferrer"
-                >GitHub</a
-              >
-            </div>
           </article>
 
-          <!-- Calculator Hub -->
-          <article class="card">
-            <div class="project-image">
-              <img src="./assets/images/calchub.png" alt="CalcHub" />
-            </div>
-            <div class="card-top">
-              <h3>CalcHub</h3>
-              <p class="muted">
-                A multi-purpose calculator hub featuring scientific
-                calculations, unit conversions, and grade calculations with
-                real-time results.
+          <!-- Flama CBT -->
+          <article class="project project-reverse">
+            <div class="project-number">02</div>
+
+            <div class="project-content">
+              <p class="project-type">
+                EdTech Web Application · HTML · CSS · JavaScript
               </p>
-            </div>
-            <ul class="mini-bullets">
-              <li>
-                Scientific calculator with advanced mathematical functions
-              </li>
-              <li>
-                Unit converter for length, weight, temperature, and volume
-              </li>
-              <li>Grade calculator with calculation history and validation</li>
-            </ul>
-            <div class="card-actions">
-              <a
-                class="btn small"
-                href="https://calculator-sigma-orpin.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-                >Live demo</a
-              >
-              <a
-                class="btn small ghost"
-                href="https://github.com/anienam/calculator"
-                target="_blank"
-                rel="noreferrer"
-                >GitHub</a
-              >
-            </div>
-          </article>
 
-          <!-- Memory Match -->
-          <article class="card">
-            <div class="project-image">
-              <img src="./assets/images/memory-match.png" alt="Memory Match" />
-            </div>
-            <div class="card-top">
-              <h3>Memory Match</h3>
-              <p class="muted">
-                An interactive browser-based memory card game where players
-                match pairs while managing their score, attempts, timer, and
-                progression.
+              <h3>Flama CBT Examination System</h3>
+
+              <p class="project-description">
+                Computer-based testing application featuring dynamic role-based
+                access for students, teachers, and principals. Implemented
+                real-time exam timers, auto-save state hooks, and dynamic score
+                calculation.
               </p>
+
+              <ul class="project-details">
+                <li>Multi-role workflows (Student, Teacher, Principal)</li>
+                <li>Dynamic exam flow, question navigation, and timer logic</li>
+                <li>Auto-saving mechanisms to prevent test data loss</li>
+                <li>Timed assessment hooks and instant result generation</li>
+              </ul>
+
+              <div class="project-actions">
+                <a
+                  class="project-link"
+                  href="https://cbt-public-website.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View live demo
+                  <span aria-hidden="true">↗</span>
+                </a>
+
+                <a
+                  class="secondary-link"
+                  href="https://github.com/anienam/cbt-public-website"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Repository
+                </a>
+              </div>
             </div>
 
-            <ul class="mini-bullets">
-              <li>Multiple difficulty levels with level progression</li>
-              <li>Score, attempts, and countdown timer tracking</li>
-              <li>Persistent high scores using localStorage</li>
-            </ul>
-
-            <div class="card-actions">
-              <a
-                class="btn small"
-                href="https://memory-match-black.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live demo
-              </a>
-
-              <a
-                class="btn small ghost"
-                href="https://github.com/anienam/memory-match"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Projects -->
-      <section id="projects" class="section container">
-        <div class="section-head">
-          <h2>Featured Projects</h2>
-        </div>
-
-        <div class="cards">
-          <!-- CBT Platform -->
-          <article class="card">
             <div class="project-image">
               <img
-                src="./assets/images/cbt-school.png"
-                alt="Flama CBT Platform"
+                src="./assets/images/cbt.png"
+                alt="Flama CBT Platform dashboard preview"
+                loading="lazy"
               />
-            </div>
-            <div class="card-top">
-              <h3>Flama CBT Platform</h3>
-              <p class="muted">
-                A computer-based testing platform designed for schools, with
-                dedicated interfaces for students, teachers, and school
-                principals. Built with Vanilla HTML, CSS, and JavaScript.
-              </p>
-            </div>
-
-            <ul class="mini-bullets">
-              <li>Multi-role portals for Students, Teachers, and Principals</li>
-              <li>Responsive dashboards and examination interfaces</li>
-              <li>
-                Interactive exam flows with timers, question navigation,
-                auto-save, and submission
-              </li>
-            </ul>
-
-            <div class="card-actions">
-              <a
-                class="btn small"
-                href="https://cbt-public-website.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live demo
-              </a>
-
-              <a
-                class="btn small ghost"
-                href="https://github.com/anienam/cbt-public-website"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
             </div>
           </article>
 
           <!-- TrashBeta -->
-          <article class="card">
-            <div class="project-image">
-              <img src="./assets/images/trashbeta.png" alt="TrashBeta" />
-            </div>
-            <div class="card-top">
-              <h3>TrashBeta</h3>
-              <p class="muted">
-                Waste management platform with Admin, Worker, and Resident
-                dashboards. Built a reusable layout system, responsive
-                navigation, and multi-step flows.
+          <article class="project">
+            <div class="project-number">03</div>
+
+            <div class="project-content">
+              <p class="project-type">Waste Management Platform · JavaScript</p>
+
+              <h3>TrashBeta Multi-Role Ecosystem</h3>
+
+              <p class="project-description">
+                Comprehensive waste tracking and reporting application. Designed
+                and implemented 30+ responsive dashboard interfaces managing
+                multi-tier user workflows across admins, service workers, and
+                residents.
               </p>
+
+              <ul class="project-details">
+                <li>30+ responsive dashboard screens built in React</li>
+                <li>Role-based access control UI (Admin, Worker, Resident)</li>
+                <li>Real-time issue reporting and status tracking flows</li>
+                <li>Reusable layout templates and notification systems</li>
+              </ul>
+
+              <div class="project-actions">
+                <a
+                  class="project-link"
+                  href="https://thrashbeta.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View live demo
+                  <span aria-hidden="true">↗</span>
+                </a>
+
+                <a
+                  class="secondary-link"
+                  href="https://github.com/anienam/thrashbeta"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Repository
+                </a>
+              </div>
             </div>
-            <ul class="mini-bullets">
-              <li>30+ responsive screens</li>
-              <li>Hamburger + cross-folder navigation fixes</li>
-              <li>Complex flows: Report Issue, Track Issue, Tasks</li>
-            </ul>
-            <div class="card-actions">
-              <a
-                class="btn small"
-                href="https://thrashbeta.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-                >Live demo</a
-              >
-              <a
-                class="btn small ghost"
-                href="https://github.com/anienam/thrashbeta"
-                target="_blank"
-                rel="noreferrer"
-                >GitHub</a
-              >
+
+            <div class="project-image">
+              <img
+                src="./assets/images/trashbeta-new.png"
+                alt="TrashBeta waste management dashboard"
+                loading="lazy"
+              />
             </div>
           </article>
 
           <!-- SkillLink -->
-          <article class="card">
-            <div class="project-image">
-              <img src="./assets/images/skillLink.png" alt="SkillLink" />
-            </div>
-            <div class="card-top">
-              <h3>SkillLink</h3>
-              <p class="muted">
-                Platform connecting skilled practitioners to clients and
-                agencies. I built the front-end interface that brought the
-                product to life under Vephla Group.
-              </p>
-            </div>
-            <ul class="mini-bullets">
-              <li>Responsive, user-friendly UI structure</li>
-              <li>Clear onboarding and content hierarchy</li>
-              <li>Built for accessibility + ease of use</li>
-            </ul>
-            <div class="card-actions">
-              <a
-                class="btn small"
-                href="https://skill-link-three-roan.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-                >Live demo</a
-              >
-              <a
-                class="btn small ghost"
-                href="https://github.com/anienam/SkillLink-Vephla-Project"
-                target="_blank"
-                rel="noreferrer"
-                >GitHub</a
-              >
-            </div>
-          </article>
+          <article class="project project-reverse">
+            <div class="project-number">04</div>
 
-          <!-- Personal Portfolio -->
-          <article class="card">
+            <div class="project-content">
+              <p class="project-type">Service Marketplace · React</p>
+
+              <h3>SkillLink Marketplace Platform</h3>
+
+              <p class="project-description">
+                Service marketplace built during my frontend engineering work at
+                Vephla Group, connecting clients with skilled practitioners
+                through onboarding, profile discovery, and service search
+                workflows.
+              </p>
+
+              <ul class="project-details">
+                <li>Streamlined user onboarding and validation flows</li>
+                <li>Filtered search interface for service categories</li>
+                <li>Modular, accessible UI component patterns</li>
+                <li>Fully responsive across mobile, tablet, and desktop</li>
+              </ul>
+
+              <div class="project-actions">
+                <a
+                  class="project-link"
+                  href="https://skill-link-three-roan.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View live demo
+                  <span aria-hidden="true">↗</span>
+                </a>
+
+                <a
+                  class="secondary-link"
+                  href="https://github.com/anienam/SkillLink-Vephla-Project"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Repository
+                </a>
+              </div>
+            </div>
+
             <div class="project-image">
               <img
-                src="./assets/images/portfolio.png"
-                alt="Personal Portfolio"
+                src="./assets/images/skillLink-new.png"
+                alt="SkillLink platform interface"
+                loading="lazy"
               />
-            </div>
-            <div class="card-top">
-              <h3>Personal Portfolio</h3>
-              <p class="muted">
-                A responsive personal portfolio showcasing my frontend
-                development experience, projects, technical skills,
-                certifications, and professional background.
-              </p>
-            </div>
-
-            <ul class="mini-bullets">
-              <li>
-                Responsive layout optimized for desktop, tablet, and mobile
-              </li>
-              <li>Accessible navigation and reusable UI patterns</li>
-              <li>Project, experience, skills, and contact sections</li>
-            </ul>
-
-            <div class="card-actions">
-              <a
-                class="btn small"
-                href="https://anienam.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live demo
-              </a>
-
-              <a
-                class="btn small ghost"
-                href="https://github.com/anienam/portfolio"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
             </div>
           </article>
         </div>
       </section>
 
       <!-- Experience -->
-      <section id="experience" class="section container">
-        <div class="section-head">
-          <h2>Experience</h2>
-        </div>
+      <section id="experience" class="section experience-section">
+        <div class="container">
+          <div class="section-intro">
+            <p class="section-label">02 / Experience</p>
 
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-role">
-              <h3>Frontend Developer</h3>
-              <p class="muted">Unitellas International • Jun 2026 - Present</p>
+            <div>
+              <h2>Professional Experience</h2>
             </div>
-
-            <ul class="mini-bullets">
-              <li>
-                Support the development, maintenance, and enhancement of the
-                company website built with Next.js and TypeScript.
-              </li>
-              <li>
-                Implement website updates, content changes, and UI improvements
-                while maintaining responsive and accessible interfaces.
-              </li>
-              <li>
-                Collaborate with designers, marketers, and other stakeholders to
-                translate requirements into effective digital experiences.
-              </li>
-              <li>
-                Build and maintain reusable frontend components and improve
-                website performance, usability, and cross-device compatibility.
-              </li>
-              <li>
-                Troubleshoot frontend issues and use Git-based workflows to
-                manage ongoing development and updates.
-              </li>
-            </ul>
           </div>
 
-          <!-- Vephla -->
+          <div class="experience-list">
+            <!-- Unitellas -->
+            <article class="experience-item">
+              <div class="experience-date">
+                <span>Jun 2026</span>
+                <span>Present</span>
+              </div>
 
-          <div class="timeline-item">
-            <div class="timeline-role">
-              <h3>Front-End Developer Intern</h3>
-              <p class="muted">Vephla Group • Dec 2024 - May 2026</p>
-            </div>
+              <div class="experience-main">
+                <div class="experience-heading">
+                  <div>
+                    <h3>Frontend Developer</h3>
+                    <p>Unitellas International</p>
+                  </div>
 
-            <ul class="mini-bullets">
-              <li>
-                Built the SkillLink and TrashBeta front-end interfaces and
-                responsive layouts.
-              </li>
-              <li>
-                Translated UI requirements into clean, maintainable HTML, CSS,
-                and JavaScript.
-              </li>
-              <li>
-                Used Git and GitHub for version control and collaborative
-                project workflows.
-              </li>
-              <li>
-                Improved usability through consistent layout structures and
-                navigation patterns.
-              </li>
-            </ul>
+                  <span class="experience-location">Lagos, Nigeria</span>
+                </div>
+
+                <p class="experience-summary">
+                  Owning frontend development for production web experiences
+                  using Next.js and TypeScript, from API integration and
+                  responsive UI implementation to deployment.
+                </p>
+
+                <ul class="experience-points">
+                  <li>
+                    Develop and maintain frontend features for the main company
+                    website using Next.js, TypeScript, and modern CSS.
+                  </li>
+                  <li>
+                    Translate product designs from Figma into production-ready,
+                    cross-browser responsive interfaces.
+                  </li>
+                  <li>
+                    Implement reusable component architectures to streamline
+                    future feature rollouts.
+                  </li>
+                  <li>
+                    Collaborate with marketing, design, and backend teams to
+                    implement UX refinements and SEO improvements.
+                  </li>
+                </ul>
+
+                <div class="experience-stack">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>React</span>
+                  <span>Tailwind CSS</span>
+                  <span>Git</span>
+                  <span>Figma</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Vephla -->
+            <article class="experience-item">
+              <div class="experience-date">
+                <span>Dec 2024</span>
+                <span>May 2026</span>
+              </div>
+
+              <div class="experience-main">
+                <div class="experience-heading">
+                  <div>
+                    <h3>Frontend Developer Intern</h3>
+                    <p>Vephla Group</p>
+                  </div>
+
+                  <span class="experience-location">Remote</span>
+                </div>
+
+                <p class="experience-summary">
+                  Developed core frontend user interfaces for multi-role client
+                  applications, focusing on scalable React architecture and
+                  responsive dashboard components.
+                </p>
+
+                <ul class="experience-points">
+                  <li>
+                    Engineered frontends for SkillLink and TrashBeta platforms
+                    using React and Tailwind CSS.
+                  </li>
+                  <li>
+                    Built over 30+ responsive dashboard screens with complex
+                    user input validation and state management.
+                  </li>
+                  <li>
+                    Utilized Git/GitHub workflows for branch management, code
+                    reviews, and feature delivery.
+                  </li>
+                </ul>
+
+                <div class="experience-stack">
+                  <span>React</span>
+                  <span>JavaScript (ES6+)</span>
+                  <span>Tailwind CSS</span>
+                  <span>Git</span>
+                  <span>REST APIs</span>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- Certifications -->
-      <section id="certs" class="section container">
-        <div class="section-head">
-          <h2>Certifications & Training</h2>
-        </div>
+      <!-- About -->
+      <section id="about" class="section about-section">
+        <div class="container about-grid">
+          <div>
+            <p class="section-label">03 / About</p>
+            <h2>From engineering to frontend development.</h2>
+          </div>
 
-        <div class="list-cards">
-          <div class="list-card">
-            <h3>ALX Professional Foundations</h3>
-            <p class="muted">Leadership • Communication • Problem Solving</p>
+          <div class="about-content">
+            <p class="about-lead">
+              I'm a Frontend Developer with a Civil Engineering background,
+              bringing an analytical approach to building digital products.
+            </p>
+
+            <p>
+              Transitioning from engineering to web development gave me a deep
+              appreciation for structural planning, system efficiency, and
+              functional design. I build digital products with the same focus on
+              integrity and usability—ensuring clean component structures,
+              performant state management, and accessible layouts.
+            </p>
+
+            <p>
+              At Unitellas International, I focus on building production web
+              features using Next.js and TypeScript. I take pride in turning
+              complex requirements into simple, intuitive user interactions.
+            </p>
           </div>
-          <div class="list-card">
-            <h3>freeCodeCamp</h3>
-            <p class="muted">Legacy Responsive Web Design V8</p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section skills-section">
+        <div class="container">
+          <div class="section-intro">
+            <p class="section-label">04 / Skills</p>
+
+            <div>
+              <h2>Technical Capabilities</h2>
+            </div>
           </div>
-          <div class="list-card">
-            <h3>
-              Vephla University (Carson Harper Tech Scholarship) - In Progress
-            </h3>
-            <p class="muted">Diploma in Front-End Engineering</p>
+
+          <div class="skills-grid">
+            <div class="skill-group">
+              <p class="skill-label">Frontend Stack</p>
+
+              <div class="skill-list">
+                <span>JavaScript (ES6+)</span>
+                <span>TypeScript</span>
+                <span>React.js</span>
+                <span>Next.js</span>
+                <span>Tailwind CSS</span>
+                <span>HTML5 / CSS3</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <p class="skill-label">Engineering & Architecture</p>
+
+              <div class="skill-list">
+                <span>Component Architecture</span>
+                <span>REST API Integration</span>
+                <span>Client-side State & UI Logic</span>
+                <span>Responsive Design</span>
+                <span>Web Accessibility (a11y)</span>
+                <span>Performance Optimization</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <p class="skill-label">Tools & Workflow</p>
+
+              <div class="skill-list">
+                <span>Git & GitHub</span>
+                <span>VS Code</span>
+                <span>Figma</span>
+                <span>Vercel</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Contact -->
-      <section id="contact" class="section container">
-        <div class="section-head">
-          <h2>Contact</h2>
-        </div>
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="contact-layout">
+            <div class="contact-heading">
+              <p class="section-label">05 / Contact</p>
 
-        <div class="contact-grid">
-          <div class="panel">
-            <h3 class="panel-title">Reach me</h3>
-            <p>
-              <strong>Email:</strong>
-              <a href="mailto:anieemma25@gmail.com">anieemma25@gmail.com</a>
-            </p>
-            <p>
-              <strong>LinkedIn:</strong>
+              <h2>Let's build something together.</h2>
+
+              <p>
+                I'm open to frontend engineering opportunities, full-time roles,
+                and technical collaborations.
+              </p>
+            </div>
+
+            <div class="contact-links">
+              <a href="mailto:anieemma25@gmail.com" class="contact-link">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">
+                  anieemma25@gmail.com
+                  <span aria-hidden="true">↗</span>
+                </span>
+              </a>
+
               <a
                 href="https://www.linkedin.com/in/anienam/"
                 target="_blank"
                 rel="noreferrer"
-                >linkedin.com/in/anienam</a
+                class="contact-link"
               >
-            </p>
-            <p>
-              <strong>GitHub:</strong>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">
+                  linkedin.com/in/anienam
+                  <span aria-hidden="true">↗</span>
+                </span>
+              </a>
+
               <a
                 href="https://github.com/anienam"
                 target="_blank"
                 rel="noreferrer"
-                >github.com/anienam</a
+                class="contact-link"
               >
-            </p>
-
-            <div class="hero-actions">
-              <a class="btn primary" href="mailto:anieemma25@gmail.com"
-                >Send an email</a
-              >
-              <a class="btn ghost" href="#top">Back to top</a>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">
+                  github.com/anienam
+                  <span aria-hidden="true">↗</span>
+                </span>
+              </a>
             </div>
           </div>
-
-          <form
-            class="panel form"
-            action="https://formspree.io/f/mjgegdaz"
-            method="post"
-          >
-            <h3 class="panel-title">Quick message</h3>
-            <label>
-              Name
-              <input
-                type="text"
-                name="name"
-                placeholder="Your name"
-                autocomplete="name"
-                required
-              />
-            </label>
-            <label>
-              Email
-              <input
-                type="email"
-                name="email"
-                placeholder="you@example.com"
-                autocomplete="email"
-                required
-              />
-            </label>
-            <label>
-              Message
-              <textarea
-                name="message"
-                rows="5"
-                placeholder="What would you like to build?"
-              ></textarea>
-            </label>
-
-            <input type="hidden" name="_next" value="thank-you.html" />
-
-            <button class="btn primary" type="submit">Send</button>
-          </form>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container footer-inner">
-        <p class="muted">
-          © <span id="year"></span> Anienamakan Udo • Frontend Engineer
-        </p>
+        <p>© <span id="year"></span> Anienamakan Udo</p>
+        <p>Frontend Developer</p>
       </div>
     </footer>
 
