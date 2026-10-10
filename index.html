@@ -1,637 +1,963 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Anienamakan Udo — Frontend Developer</title>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101d2d" />
     <meta
       name="description"
-      content="Anienamakan Udo is a Frontend Developer building responsive web applications, dashboards, and digital experiences with React, Next.js, TypeScript, and JavaScript."
+      content="The digital experience portfolio of Anienamakan Emmanuel Udo — digital platforms, learning experiences, web operations, and multimedia content."
     />
-    <meta name="author" content="Anienamakan Udo" />
-
-    <!-- Open Graph / Social Sharing -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Anienamakan Udo — Frontend Developer" />
-    <meta
-      property="og:description"
-      content="Building scalable web applications, multi-role dashboards, and responsive interfaces with React, Next.js, and TypeScript."
-    />
-    <meta property="og:image" content="./assets/images/profile-picture.jpg" />
-
+    <title>Anienamakan Udo — Digital Experience Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      href="./assets/logo/Navy AU Monogram Icon.png"
-      type="image/png"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-7MX6C7MR2V"
-    ></script>
-
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-7MX6C7MR2V");
-    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
-
   <body>
-    <!-- Header -->
-    <header class="site-header">
-      <nav class="nav container" aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Anienamakan Udo home">
-          <span class="brand-mark" aria-hidden="true">AU</span>
-          <span class="brand-text">Anienamakan Udo</span>
-        </a>
-
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-        >
-          <span class="sr-only">Open menu</span>
-          <span class="burger" aria-hidden="true"></span>
-        </button>
-
-        <div class="nav-menu" id="nav-menu">
-          <a class="nav-link" href="#work">Work</a>
-          <a class="nav-link" href="#experience">Experience</a>
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#skills">Skills</a>
-          <a class="nav-link" href="#contact">Contact</a>
-
-          <a
-            class="nav-cta"
-            href="https://github.com/anienam"
-            target="_blank"
-            rel="noreferrer"
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Anienam Udo home">
+          <span class="brand-mark">AU<span>.</span></span>
+          <span class="brand-copy"
+            ><strong>ANIENAMAKAN UDO</strong
+            ><small>DIGITAL EXPERIENCE</small></span
           >
-            GitHub ↗
-          </a>
-        </div>
-      </nav>
+        </a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="#work">Selected work</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#about">About</a>
+          <a class="nav-contact" href="#contact"
+            >Let's connect <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
     </header>
 
-    <main id="top">
-      <!-- Hero -->
-      <section class="hero container">
-        <div class="hero-content">
-          <p class="eyebrow">Frontend Developer</p>
-
-          <h1 class="hero-title">
-            I build web applications and responsive digital experiences.
-          </h1>
-
-          <p class="hero-intro">
-            I'm a Frontend Developer building responsive web applications,
-            dashboards, and digital experiences with
-            <strong>React, Next.js, TypeScript,</strong> and
-            <strong>JavaScript</strong>.
-          </p>
-
-          <p class="hero-current">
-            Currently Frontend Developer at
-            <strong>Unitellas International</strong>, maintaining and
-            engineering production cloud platform interfaces.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn primary" href="#work">
-              View selected work
-              <span aria-hidden="true">→</span>
-            </a>
-
-            <a class="text-link" href="#contact">
-              Get in touch
-              <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-
-          <div class="hero-meta">
-            <span>Lagos, Nigeria</span>
-            <span aria-hidden="true">·</span>
-            <a href="mailto:anieemma25@gmail.com">anieemma25@gmail.com</a>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-image">
-            <img
-              src="./assets/images/profile-picture.jpg"
-              alt="Anienamakan Udo"
-            />
-          </div>
-
-          <div class="hero-caption">
-            <span>Currently</span>
-            <strong>Frontend Developer</strong>
-            <span>Unitellas International</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Selected Work -->
-      <section id="work" class="section work-section">
-        <div class="container">
-          <div class="section-intro">
-            <p class="section-label">01 / Selected work</p>
-
-            <div>
-              <h2>Featured Applications & Platforms</h2>
-
-              <p class="section-description">
-                Production websites, multi-role web dashboards, and web software
-                engineered for performance, maintainability, and clean user
-                experience.
-              </p>
-            </div>
-          </div>
-
-          <!-- Unitellas -->
-          <article class="project project-featured">
-            <div class="project-number">01</div>
-
-            <div class="project-content">
-              <p class="project-type">
-                Production Web App · Next.js · TypeScript
-              </p>
-
-              <h3>Unitellas International Platform</h3>
-
-              <p class="project-description">
-                Production website for an Africa-focused cloud infrastructure
-                provider. Designed and developed frontend features, integrated
-                APIs, translated designs into responsive interfaces, and handled
-                deployment, with a focus on performance, accessibility, and
-                overall user experience.
-              </p>
-
-              <ul class="project-details">
-                <li>Next.js App Router & TypeScript codebase architecture</li>
-                <li>Modular, reusable UI component library</li>
-                <li>Performance optimization & cross-browser compatibility</li>
-                <li>Accessible semantic layouts and responsive design</li>
-              </ul>
-
-              <a
-                class="project-link"
-                href="https://www.unitellas.com.ng/"
-                target="_blank"
-                rel="noreferrer"
+    <main id="main">
+      <section class="hero section-pad">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">
+              <span class="status-dot"></span> DIGITAL PLATFORMS · EXPERIENCE ·
+              CONTENT
+            </p>
+            <h1>I make digital experiences <span>work better.</span></h1>
+            <p class="hero-lede">
+              I manage the platforms, content and touchpoints that help people
+              connect with brands, access information and learn with confidence.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work"
+                >Explore my work <span aria-hidden="true">↘</span></a
               >
-                Visit website
-                <span aria-hidden="true">↗</span>
-              </a>
+              <a class="text-link" href="#contact"
+                >Get in touch <span aria-hidden="true">↗</span></a
+              >
             </div>
-
-            <div class="project-image">
-              <img
-                src="./assets/images/unitellas.png"
-                alt="Unitellas International website interface"
-                loading="lazy"
-              />
-            </div>
-          </article>
-
-          <!-- Flama CBT -->
-          <article class="project project-reverse">
-            <div class="project-number">02</div>
-
-            <div class="project-content">
-              <p class="project-type">
-                EdTech Web Application · HTML · CSS · JavaScript
-              </p>
-
-              <h3>Flama CBT Examination System</h3>
-
-              <p class="project-description">
-                Computer-based testing application featuring dynamic role-based
-                access for students, teachers, and principals. Implemented
-                real-time exam timers, auto-save state hooks, and dynamic score
-                calculation.
-              </p>
-
-              <ul class="project-details">
-                <li>Multi-role workflows (Student, Teacher, Principal)</li>
-                <li>Dynamic exam flow, question navigation, and timer logic</li>
-                <li>Auto-saving mechanisms to prevent test data loss</li>
-                <li>Timed assessment hooks and instant result generation</li>
-              </ul>
-
-              <div class="project-actions">
-                <a
-                  class="project-link"
-                  href="https://cbt-public-website.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View live demo
-                  <span aria-hidden="true">↗</span>
-                </a>
-
-                <a
-                  class="secondary-link"
-                  href="https://github.com/anienam/cbt-public-website"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub Repository
-                </a>
+            <div class="hero-meta">
+              <div>
+                <span class="meta-label">CURRENT ROLE</span
+                ><strong>Digital Experience Manager</strong>
+              </div>
+              <div>
+                <span class="meta-label">FOCUS</span
+                ><strong>Platforms · UX · Multimedia</strong>
               </div>
             </div>
-
-            <div class="project-image">
-              <img
-                src="./assets/images/cbt.png"
-                alt="Flama CBT Platform dashboard preview"
-                loading="lazy"
-              />
-            </div>
-          </article>
-
-          <!-- TrashBeta -->
-          <article class="project">
-            <div class="project-number">03</div>
-
-            <div class="project-content">
-              <p class="project-type">Waste Management Platform · JavaScript</p>
-
-              <h3>TrashBeta Multi-Role Ecosystem</h3>
-
-              <p class="project-description">
-                Comprehensive waste tracking and reporting application. Designed
-                and implemented 30+ responsive dashboard interfaces managing
-                multi-tier user workflows across admins, service workers, and
-                residents.
-              </p>
-
-              <ul class="project-details">
-                <li>30+ responsive dashboard screens built in React</li>
-                <li>Role-based access control UI (Admin, Worker, Resident)</li>
-                <li>Real-time issue reporting and status tracking flows</li>
-                <li>Reusable layout templates and notification systems</li>
-              </ul>
-
-              <div class="project-actions">
-                <a
-                  class="project-link"
-                  href="https://thrashbeta.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View live demo
-                  <span aria-hidden="true">↗</span>
-                </a>
-
-                <a
-                  class="secondary-link"
-                  href="https://github.com/anienam/thrashbeta"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub Repository
-                </a>
+          </div>
+          <div
+            class="hero-art reveal"
+            aria-label="Abstract digital experience illustration"
+          >
+            <div class="art-glow"></div>
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="art-panel panel-main">
+              <div class="panel-top">
+                <span class="window-dots"><i></i><i></i><i></i></span
+                ><span class="panel-tag">DIGITAL EXPERIENCE</span>
+              </div>
+              <div class="panel-heading">
+                <span class="tiny-label">CONNECTED TOUCHPOINTS</span
+                ><span class="panel-line"></span>
+              </div>
+              <div class="touchpoint-grid">
+                <div class="touchpoint touchpoint-cyan">
+                  <span class="touch-icon">⌘</span><b>Web</b
+                  ><small>Digital platforms</small>
+                </div>
+                <div class="touchpoint">
+                  <span class="touch-icon">▶</span><b>Media</b
+                  ><small>Stories & content</small>
+                </div>
+                <div class="touchpoint">
+                  <span class="touch-icon">▤</span><b>Learning</b
+                  ><small>Learner journeys</small>
+                </div>
+                <div class="touchpoint">
+                  <span class="touch-icon">↗</span><b>Insights</b
+                  ><small>Better decisions</small>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <span class="pulse"></span> Thoughtful by design. Useful by
+                default.
               </div>
             </div>
-
-            <div class="project-image">
-              <img
-                src="./assets/images/trashbeta-new.png"
-                alt="TrashBeta waste management dashboard"
-                loading="lazy"
-              />
+            <div class="floating-note note-top">
+              <span class="note-icon">✳</span
+              ><span
+                ><b>Clear experiences</b
+                ><small>Across every touchpoint</small></span
+              >
             </div>
-          </article>
-
-          <!-- SkillLink -->
-          <article class="project project-reverse">
-            <div class="project-number">04</div>
-
-            <div class="project-content">
-              <p class="project-type">Service Marketplace · React</p>
-
-              <h3>SkillLink Marketplace Platform</h3>
-
-              <p class="project-description">
-                Service marketplace built during my frontend engineering work at
-                Vephla Group, connecting clients with skilled practitioners
-                through onboarding, profile discovery, and service search
-                workflows.
-              </p>
-
-              <ul class="project-details">
-                <li>Streamlined user onboarding and validation flows</li>
-                <li>Filtered search interface for service categories</li>
-                <li>Modular, accessible UI component patterns</li>
-                <li>Fully responsive across mobile, tablet, and desktop</li>
-              </ul>
-
-              <div class="project-actions">
-                <a
-                  class="project-link"
-                  href="https://skill-link-three-roan.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View live demo
-                  <span aria-hidden="true">↗</span>
-                </a>
-
-                <a
-                  class="secondary-link"
-                  href="https://github.com/anienam/SkillLink-Vephla-Project"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub Repository
-                </a>
-              </div>
+            <div class="floating-note note-bottom">
+              <span class="note-bars"><i></i><i></i><i></i><i></i></span
+              ><span
+                ><b>Built around people</b
+                ><small>From first click to last</small></span
+              >
             </div>
-
-            <div class="project-image">
-              <img
-                src="./assets/images/skillLink-new.png"
-                alt="SkillLink platform interface"
-                loading="lazy"
-              />
-            </div>
-          </article>
+            <span class="art-star star-one">✳</span
+            ><span class="art-star star-two">✦</span>
+          </div>
+        </div>
+        <div class="container hero-bottom">
+          <span>BASED IN LAGOS, NIGERIA</span
+          ><span class="scroll-cue">SCROLL TO EXPLORE <i>↓</i></span>
         </div>
       </section>
 
-      <!-- Experience -->
-      <section id="experience" class="section experience-section">
+      <section class="intro-strip">
+        <div class="container intro-strip-inner">
+          <p>Part strategist. Part problem-solver. Part maker.</p>
+          <span
+            >I bring digital platforms, content and user experience
+            together.</span
+          >
+        </div>
+      </section>
+
+      <section class="work-section section-pad" id="work">
         <div class="container">
-          <div class="section-intro">
-            <p class="section-label">02 / Experience</p>
-
+          <div class="section-heading reveal">
             <div>
-              <h2>Professional Experience</h2>
+              <p class="eyebrow">A SELECTION OF MY WORK</p>
+              <h2>Where experience<br /><span>meets execution.</span></h2>
             </div>
+            <p class="section-description">
+              A growing collection of digital platforms I manage, experiences I
+              improve, and creative work I help bring to life.
+            </p>
           </div>
-
-          <div class="experience-list">
-            <!-- Unitellas -->
-            <article class="experience-item">
-              <div class="experience-date">
-                <span>Jun 2026</span>
-                <span>Present</span>
-              </div>
-
-              <div class="experience-main">
-                <div class="experience-heading">
-                  <div>
-                    <h3>Frontend Developer</h3>
-                    <p>Unitellas International</p>
+          <div
+            class="filter-row reveal"
+            role="group"
+            aria-label="Filter portfolio projects"
+          >
+            <button
+              class="filter-button is-active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All work <span>06</span>
+            </button>
+            <button
+              class="filter-button"
+              data-filter="platforms"
+              aria-pressed="false"
+            >
+              Platforms
+            </button>
+            <button
+              class="filter-button"
+              data-filter="creative"
+              aria-pressed="false"
+            >
+              Graphics & video
+            </button>
+            <button
+              class="filter-button"
+              data-filter="learning"
+              aria-pressed="false"
+            >
+              Learning experience
+            </button>
+            <button
+              class="filter-button"
+              data-filter="strategy"
+              aria-pressed="false"
+            >
+              Strategy & content
+            </button>
+          </div>
+          <div class="project-grid" id="project-grid">
+            <article
+              class="project-card project-featured reveal"
+              data-category="learning platforms"
+              data-project="lms"
+            >
+              <button
+                class="project-visual visual-lms"
+                data-open-project="lms"
+                aria-label="View Unitellas Training Centre case study"
+              >
+                <div class="mock-browser">
+                  <div class="mock-browser-bar">
+                    <span></span><span></span><span></span
+                    ><small>training.unitellas.com</small>
                   </div>
-
-                  <span class="experience-location">Lagos, Nigeria</span>
+                  <div class="mock-site">
+                    <div class="mock-site-nav">
+                      <b>UNITELLAS <i>TRAINING</i></b
+                      ><span>Courses　 About　 Certifications</span>
+                    </div>
+                    <div class="mock-site-hero">
+                      <small>LEARN. GROW. LEAD.</small
+                      ><strong>Build skills for<br />what comes next.</strong
+                      ><span class="mock-cta">Explore courses ↗</span>
+                    </div>
+                    <div class="mock-course-row"><i></i><i></i><i></i></div>
+                  </div>
                 </div>
-
-                <p class="experience-summary">
-                  Owning frontend development for production web experiences
-                  using Next.js and TypeScript, from API integration and
-                  responsive UI implementation to deployment.
+                <span class="visual-corner-label">PLATFORM MANAGEMENT</span
+                ><span class="visual-open">↗</span>
+              </button>
+              <div class="project-info">
+                <div>
+                  <p class="project-type">01 / LEARNING EXPERIENCE</p>
+                  <h3>Unitellas Training Centre</h3>
+                </div>
+                <p>
+                  Managing a training website and learning journey through Zoho
+                  TrainerCentral, from site structure to course discovery.
                 </p>
-
-                <ul class="experience-points">
-                  <li>
-                    Develop and maintain frontend features for the main company
-                    website using Next.js, TypeScript, and modern CSS.
-                  </li>
-                  <li>
-                    Translate product designs from Figma into production-ready,
-                    cross-browser responsive interfaces.
-                  </li>
-                  <li>
-                    Implement reusable component architectures to streamline
-                    future feature rollouts.
-                  </li>
-                  <li>
-                    Collaborate with marketing, design, and backend teams to
-                    implement UX refinements and SEO improvements.
-                  </li>
-                </ul>
-
-                <div class="experience-stack">
-                  <span>Next.js</span>
-                  <span>TypeScript</span>
-                  <span>React</span>
-                  <span>Tailwind CSS</span>
-                  <span>Git</span>
-                  <span>Figma</span>
-                </div>
+                <button
+                  class="arrow-button"
+                  data-open-project="lms"
+                  aria-label="Read Unitellas Training Centre case study"
+                >
+                  ↗
+                </button>
               </div>
             </article>
-
-            <!-- Vephla -->
-            <article class="experience-item">
-              <div class="experience-date">
-                <span>Dec 2024</span>
-                <span>May 2026</span>
-              </div>
-
-              <div class="experience-main">
-                <div class="experience-heading">
-                  <div>
-                    <h3>Frontend Developer Intern</h3>
-                    <p>Vephla Group</p>
+            <article
+              class="project-card reveal"
+              data-category="platforms"
+              data-project="website"
+            >
+              <button
+                class="project-visual visual-web"
+                data-open-project="website"
+                aria-label="View corporate website management case study"
+              >
+                <div class="web-window">
+                  <div class="web-window-top">
+                    <span>UNITELLAS</span><span>☰</span>
                   </div>
-
-                  <span class="experience-location">Remote</span>
+                  <div class="web-window-body">
+                    <div>
+                      <small>TECHNOLOGY THAT MOVES YOU FORWARD</small
+                      ><b>Infrastructure<br />for what's next.</b><i></i>
+                    </div>
+                    <div class="web-orb"></div>
+                  </div>
+                  <div class="web-window-foot">
+                    <span></span><span></span><span></span>
+                  </div>
                 </div>
-
-                <p class="experience-summary">
-                  Developed core frontend user interfaces for multi-role client
-                  applications, focusing on scalable React architecture and
-                  responsive dashboard components.
+                <span class="visual-corner-label">WEB EXPERIENCE</span
+                ><span class="visual-open">↗</span>
+              </button>
+              <div class="project-info">
+                <div>
+                  <p class="project-type">02 / DIGITAL PLATFORMS</p>
+                  <h3>Corporate Website Experience</h3>
+                </div>
+                <p>
+                  Website updates, content changes, responsive improvements and
+                  ongoing platform maintenance.
                 </p>
-
-                <ul class="experience-points">
-                  <li>
-                    Engineered frontends for SkillLink and TrashBeta platforms
-                    using React and Tailwind CSS.
-                  </li>
-                  <li>
-                    Built over 30+ responsive dashboard screens with complex
-                    user input validation and state management.
-                  </li>
-                  <li>
-                    Utilized Git/GitHub workflows for branch management, code
-                    reviews, and feature delivery.
-                  </li>
-                </ul>
-
-                <div class="experience-stack">
-                  <span>React</span>
-                  <span>JavaScript (ES6+)</span>
-                  <span>Tailwind CSS</span>
-                  <span>Git</span>
-                  <span>REST APIs</span>
+                <button
+                  class="arrow-button"
+                  data-open-project="website"
+                  aria-label="Read corporate website case study"
+                >
+                  ↗
+                </button>
+              </div>
+            </article>
+            <article
+              class="project-card reveal"
+              data-category="creative strategy"
+              data-project="graphics"
+            >
+              <button
+                class="project-visual visual-creative"
+                data-open-project="graphics"
+                aria-label="View graphics and campaign creative work"
+              >
+                <div class="creative-stack">
+                  <div class="creative-poster poster-back">
+                    <small>INFRASTRUCTURE / INSIGHTS</small
+                    ><b>Build for<br />what's next.</b><span>UNITELLAS</span>
+                  </div>
+                  <div class="creative-poster poster-front">
+                    <small>THE DIGITAL SHIFT</small
+                    ><b>Make your<br />data work<br />smarter.</b>
+                    <div class="poster-orbit"></div>
+                    <span>UNITELLAS · TECHNOLOGY</span>
+                  </div>
                 </div>
+                <span class="visual-corner-label">CAMPAIGN CREATIVE</span
+                ><span class="visual-open">↗</span>
+              </button>
+              <div class="project-info">
+                <div>
+                  <p class="project-type">03 / GRAPHICS & CAMPAIGNS</p>
+                  <h3>Brand & Campaign Creatives</h3>
+                </div>
+                <p>
+                  Visual content designed to communicate technology topics and
+                  maintain a consistent digital brand presence.
+                </p>
+                <button
+                  class="arrow-button"
+                  data-open-project="graphics"
+                  aria-label="Read creative work case study"
+                >
+                  ↗
+                </button>
+              </div>
+            </article>
+            <article
+              class="project-card reveal"
+              data-category="creative"
+              data-project="video"
+            >
+              <button
+                class="project-visual visual-video"
+                data-open-project="video"
+                aria-label="View video and multimedia work"
+              >
+                <div class="video-frame">
+                  <div class="video-frame-top">
+                    <span>UNITELLAS / MEDIA</span><span>01:24</span>
+                  </div>
+                  <div class="video-graphic">
+                    <span class="video-ring ring-a"></span
+                    ><span class="video-ring ring-b"></span
+                    ><b>IDEAS INTO<br /><i>IMPACT.</i></b
+                    ><span class="play-circle">▶</span>
+                  </div>
+                  <div class="video-timeline"><i></i></div>
+                </div>
+                <span class="visual-corner-label">VIDEO & MOTION</span
+                ><span class="visual-open">↗</span>
+              </button>
+              <div class="project-info">
+                <div>
+                  <p class="project-type">04 / MULTIMEDIA</p>
+                  <h3>Video & Motion Content</h3>
+                </div>
+                <p>
+                  Video assets and motion-led storytelling created to make
+                  digital topics more engaging and accessible.
+                </p>
+                <button
+                  class="arrow-button"
+                  data-open-project="video"
+                  aria-label="Read video work case study"
+                >
+                  ↗
+                </button>
+              </div>
+            </article>
+            <article
+              class="project-card reveal"
+              data-category="strategy creative"
+              data-project="social"
+            >
+              <button
+                class="project-visual visual-social"
+                data-open-project="social"
+                aria-label="View social media content and publishing work"
+              >
+                <div class="social-board">
+                  <div class="social-board-head">
+                    <span class="social-avatar">U</span
+                    ><span
+                      ><b>Unitellas International</b
+                      ><small>Digital content preview</small></span
+                    ><span class="social-dots">•••</span>
+                  </div>
+                  <div class="social-board-copy">
+                    <small>TECHNOLOGY EXPLAINED</small
+                    ><b
+                      >Cloud decisions<br />should start with<br /><i
+                        >your business.</i
+                      ></b
+                    ><span class="social-wave"></span>
+                  </div>
+                  <div class="social-board-foot">
+                    <span>♡　↗　▢</span><span>CONTENT SERIES</span>
+                  </div>
+                </div>
+                <span class="visual-corner-label">SOCIAL CONTENT</span
+                ><span class="visual-open">↗</span>
+              </button>
+              <div class="project-info">
+                <div>
+                  <p class="project-type">05 / DIGITAL CONTENT</p>
+                  <h3>Social Content & Publishing</h3>
+                </div>
+                <p>
+                  Content planning and publishing support for clear, consistent
+                  communication across digital channels.
+                </p>
+                <button
+                  class="arrow-button"
+                  data-open-project="social"
+                  aria-label="Read social content case study"
+                >
+                  ↗
+                </button>
+              </div>
+            </article>
+            <article
+              class="project-card reveal"
+              data-category="strategy platforms"
+              data-project="experience"
+            >
+              <button
+                class="project-visual visual-insights"
+                data-open-project="experience"
+                aria-label="View digital experience and optimisation case study"
+              >
+                <div class="insight-card">
+                  <div class="insight-heading">
+                    <span>EXPERIENCE REVIEW</span
+                    ><span class="insight-icon">↗</span>
+                  </div>
+                  <b>Every touchpoint<br />has a purpose.</b>
+                  <div class="insight-metrics">
+                    <div><span>01</span><i>Discover</i></div>
+                    <div><span>02</span><i>Understand</i></div>
+                    <div><span>03</span><i>Act</i></div>
+                  </div>
+                  <div class="insight-line"><i></i></div>
+                </div>
+                <span class="visual-corner-label">UX & OPTIMISATION</span
+                ><span class="visual-open">↗</span>
+              </button>
+              <div class="project-info">
+                <div>
+                  <p class="project-type">06 / EXPERIENCE STRATEGY</p>
+                  <h3>Digital Experience Operations</h3>
+                </div>
+                <p>
+                  A look at the workflows behind platform quality, content
+                  consistency, usability and continuous improvement.
+                </p>
+                <button
+                  class="arrow-button"
+                  data-open-project="experience"
+                  aria-label="Read digital experience case study"
+                >
+                  ↗
+                </button>
               </div>
             </article>
           </div>
-        </div>
-      </section>
-
-      <!-- About -->
-      <section id="about" class="section about-section">
-        <div class="container about-grid">
-          <div>
-            <p class="section-label">03 / About</p>
-            <h2>From engineering to frontend development.</h2>
-          </div>
-
-          <div class="about-content">
-            <p class="about-lead">
-              I'm a Frontend Developer with a Civil Engineering background,
-              bringing an analytical approach to building digital products.
-            </p>
-
-            <p>
-              Transitioning from engineering to web development gave me a deep
-              appreciation for structural planning, system efficiency, and
-              functional design. I build digital products with the same focus on
-              integrity and usability—ensuring clean component structures,
-              performant state management, and accessible layouts.
-            </p>
-
-            <p>
-              At Unitellas International, I focus on building production web
-              features using Next.js and TypeScript. I take pride in turning
-              complex requirements into simple, intuitive user interactions.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section id="skills" class="section skills-section">
-        <div class="container">
-          <div class="section-intro">
-            <p class="section-label">04 / Skills</p>
-
-            <div>
-              <h2>Technical Capabilities</h2>
-            </div>
-          </div>
-
-          <div class="skills-grid">
-            <div class="skill-group">
-              <p class="skill-label">Frontend Stack</p>
-
-              <div class="skill-list">
-                <span>JavaScript (ES6+)</span>
-                <span>TypeScript</span>
-                <span>React.js</span>
-                <span>Next.js</span>
-                <span>Tailwind CSS</span>
-                <span>HTML5 / CSS3</span>
+          <section class="lms-evidence" aria-labelledby="lms-evidence-title">
+            <div class="real-work-heading">
+              <div>
+                <p class="eyebrow">LEARNING PLATFORM MANAGEMENT</p>
+                <h3 id="lms-evidence-title">
+                  Behind the <span>learning experience.</span>
+                </h3>
               </div>
-            </div>
-
-            <div class="skill-group">
-              <p class="skill-label">Engineering & Architecture</p>
-
-              <div class="skill-list">
-                <span>Component Architecture</span>
-                <span>REST API Integration</span>
-                <span>Client-side State & UI Logic</span>
-                <span>Responsive Design</span>
-                <span>Web Accessibility (a11y)</span>
-                <span>Performance Optimization</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <p class="skill-label">Tools & Workflow</p>
-
-              <div class="skill-list">
-                <span>Git & GitHub</span>
-                <span>VS Code</span>
-                <span>Figma</span>
-                <span>Vercel</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="section contact-section">
-        <div class="container">
-          <div class="contact-layout">
-            <div class="contact-heading">
-              <p class="section-label">05 / Contact</p>
-
-              <h2>Let's build something together.</h2>
-
               <p>
-                I'm open to frontend engineering opportunities, full-time roles,
-                and technical collaborations.
+                Selected screenshots from the Unitellas International Training
+                Centre setup in Zoho TrainerCentral, showing course
+                administration and site-template management.
               </p>
             </div>
-
-            <div class="contact-links">
-              <a href="mailto:anieemma25@gmail.com" class="contact-link">
-                <span class="contact-label">Email</span>
-                <span class="contact-value">
-                  anieemma25@gmail.com
-                  <span aria-hidden="true">↗</span>
-                </span>
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/anienam/"
-                target="_blank"
-                rel="noreferrer"
-                class="contact-link"
-              >
-                <span class="contact-label">LinkedIn</span>
-                <span class="contact-value">
-                  linkedin.com/in/anienam
-                  <span aria-hidden="true">↗</span>
-                </span>
-              </a>
-
-              <a
-                href="https://github.com/anienam"
-                target="_blank"
-                rel="noreferrer"
-                class="contact-link"
-              >
-                <span class="contact-label">GitHub</span>
-                <span class="contact-value">
-                  github.com/anienam
-                  <span aria-hidden="true">↗</span>
-                </span>
-              </a>
+            <div class="lms-evidence-grid">
+              <figure class="lms-evidence-card">
+                <a
+                  href="assets/images/unitellas-lms-courses-dashboard.png"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open LMS course management screenshot"
+                  ><img
+                    src="assets/images/unitellas-lms-courses-dashboard.png"
+                    alt="Zoho TrainerCentral course administration screen showing three courses, course status and enrolment information"
+                    loading="lazy"
+                /></a>
+                <figcaption>
+                  <span>COURSE ADMINISTRATION</span
+                  ><strong>Course catalogue management</strong>
+                  <p>
+                    Course listing and administration view for the training
+                    platform, including draft and published course states.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="lms-evidence-card">
+                <a
+                  href="assets/images/unitellas-lms-site-management.png"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open Unitellas Training Centre site management screenshot"
+                  ><img
+                    src="assets/images/unitellas-lms-site-management.png"
+                    alt="Zoho TrainerCentral site template management screen for Unitellas International Training Centre"
+                    loading="lazy"
+                /></a>
+                <figcaption>
+                  <span>WEBSITE CONFIGURATION</span
+                  ><strong>Training website management</strong>
+                  <p>
+                    Site-template management view for the Unitellas
+                    International Training Centre website, including preview and
+                    site access options.
+                  </p>
+                </figcaption>
+              </figure>
             </div>
+            <p class="lms-evidence-note">
+              These screenshots document the platform administration
+              environment. Add public-facing page screenshots and verified
+              outcomes as the site and course catalogue progress.
+            </p>
+          </section>
+          <section
+            class="lms-evidence website-evidence"
+            aria-labelledby="website-evidence-title"
+          >
+            <div class="real-work-heading">
+              <div>
+                <p class="eyebrow">CORPORATE WEBSITE MANAGEMENT</p>
+                <h3 id="website-evidence-title">
+                  The corporate <span>web experience.</span>
+                </h3>
+              </div>
+              <p>
+                Selected views of the Unitellas corporate website, documenting
+                its homepage and solutions page structure, navigation, visual
+                hierarchy and service presentation.
+              </p>
+            </div>
+            <div class="lms-evidence-grid">
+              <figure class="lms-evidence-card">
+                <a
+                  href="assets/images/unitellas-corporate-homepage.png"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open Unitellas corporate website homepage screenshot"
+                  ><img
+                    src="assets/images/unitellas-corporate-homepage.png"
+                    alt="Unitellas corporate website homepage with navigation, cloud infrastructure headline, service summary and calls to action"
+                    loading="lazy"
+                /></a>
+                <figcaption>
+                  <span>HOMEPAGE EXPERIENCE</span
+                  ><strong>Corporate website homepage</strong>
+                  <p>
+                    Shows the main navigation, brand presentation, primary
+                    message and calls to action for the corporate website.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="lms-evidence-card">
+                <a
+                  href="assets/images/unitellas-corporate-solutions.png"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open Unitellas corporate website solutions page screenshot"
+                  ><img
+                    src="assets/images/unitellas-corporate-solutions.png"
+                    alt="Unitellas solutions page with a headline and cards for Edge Cloud, Sovereign Cloud and Enterprise Compute"
+                    loading="lazy"
+                /></a>
+                <figcaption>
+                  <span>SOLUTIONS & INFORMATION ARCHITECTURE</span
+                  ><strong>Solutions page</strong>
+                  <p>
+                    Shows how key offerings are grouped into scannable cards
+                    with concise descriptions and links to explore each
+                    solution.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <p class="lms-evidence-note">
+              These screenshots show the website's presentation and structure.
+              The case study should describe your specific contribution only
+              where you can verify it; screenshots alone do not establish which
+              design or development tasks you personally completed.
+            </p>
+          </section>
+          <section class="real-work" aria-labelledby="real-work-title">
+            <div class="real-work-heading">
+              <div>
+                <p class="eyebrow">SELECTED CREATIVE WORK</p>
+                <h3 id="real-work-title">Made for <span>Unitellas.</span></h3>
+              </div>
+              <p>
+                Selected technology and brand creatives created for Unitellas
+                digital communications.
+              </p>
+            </div>
+            <div class="real-work-grid">
+              <figure class="real-work-card">
+                <a
+                  href="assets/images/unitellas-cloud-security.png"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open Cloud Security Best Practices graphic"
+                  ><img
+                    src="assets/images/unitellas-cloud-security.png"
+                    alt="Unitellas cloud security graphic outlining six best practices for a more secure cloud"
+                    loading="lazy"
+                /></a>
+                <figcaption>
+                  <span>TECHNOLOGY EDUCATION</span
+                  ><strong>Cloud Security Best Practices</strong>
+                  <p>
+                    A visual explainer covering six practices for a more secure
+                    cloud environment.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="real-work-card">
+                <a
+                  href="assets/images/unitellas-independence-day.png"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open Nigeria Independence Day creative"
+                  ><img
+                    src="assets/images/unitellas-independence-day.png"
+                    alt="Unitellas Nigeria Independence Day celebration graphic"
+                    loading="lazy"
+                /></a>
+                <figcaption>
+                  <span>BRAND & CULTURE</span
+                  ><strong>Nigeria Independence Day</strong>
+                  <p>
+                    A branded celebration creative connecting national identity,
+                    technology and progress.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="real-work-card">
+                <a
+                  href="assets/images/unitellas-cloud-scale.png"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open cloud scalability LinkedIn graphic"
+                  ><img
+                    src="assets/images/unitellas-cloud-scale.png"
+                    alt="Unitellas LinkedIn graphic explaining how enterprises scale faster with cloud"
+                    loading="lazy"
+                /></a>
+                <figcaption>
+                  <span>LINKEDIN CONTENT</span
+                  ><strong>How Enterprises Scale with Cloud</strong>
+                  <p>
+                    An educational social graphic communicating cloud
+                    scalability and business benefits.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="real-work-heading video-work-heading">
+              <div>
+                <p class="eyebrow">VIDEO & MOTION</p>
+                <h3>Stories in <span>motion.</span></h3>
+              </div>
+              <p>
+                Video content supplied for the Unitellas digital communications
+                portfolio. Use the controls to watch each video.
+              </p>
+            </div>
+            <div class="real-work-grid video-work-grid">
+              <figure class="real-work-card real-video-card">
+                <video
+                  controls
+                  preload="metadata"
+                  playsinline
+                  aria-label="Digital Sovereignty video"
+                >
+                  <source
+                    src="assets/videos/digital-sovereignty.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support embedded video.
+                </video>
+                <figcaption>
+                  <span>DIGITAL INFRASTRUCTURE</span
+                  ><strong>Digital Sovereignty</strong>
+                  <p>
+                    Video content about digital sovereignty for technology
+                    awareness and communication.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="real-work-card real-video-card">
+                <video
+                  controls
+                  preload="metadata"
+                  playsinline
+                  aria-label="Unitellas Managed Cloud video"
+                >
+                  <source
+                    src="assets/videos/unitellas-managed-cloud.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support embedded video.
+                </video>
+                <figcaption>
+                  <span>CLOUD SERVICES</span
+                  ><strong>Unitellas Managed Cloud</strong>
+                  <p>
+                    Video content introducing managed cloud services and
+                    supporting brand communication.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <p class="portfolio-note">
+            <span>PORTFOLIO NOTE</span> These selected graphics and videos were
+            supplied for this portfolio. Confirm company approval before public
+            publication and add verified project context or performance results
+            where available.
+          </p>
+        </div>
+      </section>
+
+      <section class="expertise-section section-pad" id="expertise">
+        <div class="container expertise-layout">
+          <div class="expertise-intro reveal">
+            <p class="eyebrow">WHAT I BRING TO THE TABLE</p>
+            <h2>One connected<br /><span>digital experience.</span></h2>
+            <p>
+              I work across the layers that make digital experiences useful: the
+              platform behind the scenes, the content people see, and the
+              journey they move through.
+            </p>
+            <a class="text-link" href="#contact"
+              >Let's talk about your project <span>↗</span></a
+            >
+          </div>
+          <div class="expertise-list reveal">
+            <article>
+              <span class="expertise-number">01</span>
+              <div>
+                <h3>Digital platform management</h3>
+                <p>
+                  Website maintenance, CMS/LMS administration, updates, quality
+                  checks and issue coordination.
+                </p>
+              </div>
+              <span class="expertise-symbol">↗</span>
+            </article>
+            <article>
+              <span class="expertise-number">02</span>
+              <div>
+                <h3>User experience & web operations</h3>
+                <p>
+                  Responsive layouts, clear navigation, consistent interfaces
+                  and thoughtful user journeys.
+                </p>
+              </div>
+              <span class="expertise-symbol">↗</span>
+            </article>
+            <article>
+              <span class="expertise-number">03</span>
+              <div>
+                <h3>Creative & multimedia content</h3>
+                <p>
+                  Graphics, videos, campaign assets and digital storytelling
+                  that make ideas easier to understand.
+                </p>
+              </div>
+              <span class="expertise-symbol">↗</span>
+            </article>
+            <article>
+              <span class="expertise-number">04</span>
+              <div>
+                <h3>Learning experience management</h3>
+                <p>
+                  Training website structure, course discovery, learner-facing
+                  content and LMS experience.
+                </p>
+              </div>
+              <span class="expertise-symbol">↗</span>
+            </article>
+            <article>
+              <span class="expertise-number">05</span>
+              <div>
+                <h3>Content coordination & consistency</h3>
+                <p>
+                  Content planning, publishing workflows, brand consistency and
+                  cross-channel communication.
+                </p>
+              </div>
+              <span class="expertise-symbol">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section section-pad" id="about">
+        <div class="container about-grid">
+          <div class="about-mark reveal">
+            <span>AU<span>.</span></span>
+            <div class="about-mark-caption">
+              DIGITAL EXPERIENCE<br />MANAGEMENT
+            </div>
+            <div class="about-mark-lines"></div>
+          </div>
+          <div class="about-copy reveal">
+            <p class="eyebrow">A LITTLE ABOUT ME</p>
+            <h2>
+              Technical thinking.<br /><span>Human-centred execution.</span>
+            </h2>
+            <p>
+              I'm Anienamakan Emmanuel Udo, a Digital Experience Manager with a
+              frontend development background. My work sits where digital
+              platforms, user experience and content meet.
+            </p>
+            <p>
+              At Unitellas International, I work across the company's digital
+              touchpoints, including its website, training platform and digital
+              content. I enjoy making digital systems easier to navigate,
+              keeping experiences consistent, and turning ideas into useful
+              online experiences.
+            </p>
+            <div class="about-tags">
+              <span>Digital platforms</span><span>Web & UX</span
+              ><span>Creative content</span><span>Learning experience</span>
+            </div>
+            <a
+              class="button button-outline"
+              href="assets/Anienam-Udo-CV.pdf"
+              download
+              >Download CV <span>↓</span></a
+            >
+            <p class="small-note">
+              Add your CV PDF to the assets folder and name it
+              <code>Anienam-Udo-CV.pdf</code> to activate this link.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-pad" id="contact">
+        <div class="container contact-card reveal">
+          <div class="contact-orb"></div>
+          <p class="eyebrow">HAVE A PROJECT OR OPPORTUNITY?</p>
+          <h2>Let's make the digital<br /><span>experience better.</span></h2>
+          <p>
+            Open to conversations about digital experience, platform management,
+            learning platforms and creative digital work.
+          </p>
+          <div class="contact-actions">
+            <a
+              class="button button-primary"
+              href="mailto:anieemma25@gmail.com?subject=Digital%20Experience%20Portfolio%20Enquiry"
+              >Email me <span>↗</span></a
+            ><a
+              class="button button-light-outline"
+              href="https://www.linkedin.com/in/anienam/"
+              target="_blank"
+              rel="noreferrer"
+              >Connect on LinkedIn <span>↗</span></a
+            >
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer-inner">
-        <p>© <span id="year"></span> Anienamakan Udo</p>
-        <p>Frontend Developer</p>
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <a class="brand brand-footer" href="#top"
+          ><span class="brand-mark">AU<span>.</span></span
+          ><span class="brand-copy"
+            ><strong>ANIENAMAKAN UDO</strong
+            ><small>DIGITAL EXPERIENCE</small></span
+          ></a
+        >
+        <p>
+          Managing the details that make digital experiences feel effortless.
+        </p>
+        <div class="footer-links">
+          <a href="mailto:anieemma25@gmail.com">Email</a
+          ><a
+            href="https://www.linkedin.com/in/anienam/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn ↗</a
+          ><a
+            href="https://anienam.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            >Developer portfolio ↗</a
+          >
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> Anienamakan Emmanuel Udo</span
+        ><span>Designed with intention. Built for people.</span
+        ><a href="#top">Back to top ↑</a>
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <dialog
+      class="project-dialog"
+      id="project-dialog"
+      aria-labelledby="dialog-title"
+    >
+      <button class="dialog-close" aria-label="Close project details">×</button>
+      <div class="dialog-content">
+        <p class="eyebrow" id="dialog-kicker">PROJECT CASE STUDY</p>
+        <h2 id="dialog-title">Project title</h2>
+        <p id="dialog-summary" class="dialog-summary"></p>
+        <div class="dialog-columns">
+          <div>
+            <h3>My contribution</h3>
+            <ul id="dialog-contribution"></ul>
+          </div>
+          <div>
+            <h3>What to showcase</h3>
+            <ul id="dialog-showcase"></ul>
+          </div>
+        </div>
+        <p class="dialog-footnote">
+          Replace these starter descriptions with specific details from your
+          work. Only include responsibilities, tools and outcomes you can
+          verify.
+        </p>
+      </div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
   </body>
 </html>
